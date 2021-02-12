@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleNote } from '../actions/actions'
-import Input from './Input'
+import { toggleNote } from '../../actions/actions';
+import Input from './Input/Input';
+import './List.css';
 
 const List = () => {
 
@@ -28,7 +29,7 @@ const List = () => {
           />
         ))}           
       </div>
-      <button onClick={clearList}>Poista lista</button>
+      <button onClick={clearList}>Tyhjennä lista</button>
      </div>
   );
 };

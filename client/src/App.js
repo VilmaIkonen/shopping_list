@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import List from './containers/List';
+import List from './containers/List/List';
 import { getAll, createNote } from './actions/actions';
 
 const App = () => {
